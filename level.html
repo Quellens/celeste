@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/fontstyles.css">
+    <link rel="stylesheet" href="styles/canvas.css">
+    <link rel="stylesheet" href="styles/website.css">
+    <title>Celeste – Spiele PICO4-Celeste</title>
+    <link rel="shorrtcut icon" type="image/x-icon" href="imgs/mydesign/madeline_happy.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="imgs/mydesign/madeline_happy.png" alt="Logo" width="50" height="50">
+        </div>
+        <input type="checkbox" class="menu-toggle" id="menu-toggle">
+        <label for="menu-toggle" class="menu-toggle-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="index.html">Hauptseite</a></li>
+            <li><a href="techniken.html">Techniken</a></li>
+            <li><a href="super.html">Super üben</a></li>
+            <li><a href="wavedash.html">Wavedash üben</a></li>
+            <li><a href="steuerung.html">Steuerung</a></li>
+            <li><a href="level.html">PICO4 – Level</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <h1>PICO4 – Level</h1>
+        <h2 id="zuerlernendetechnik"></h2>
+        <div id="p5Canvas"></div>
+        <button id="change-setup-button">Skip</button>
+        <a href="steuerung.html" class="button">Steuerung</a>
+        <a href="super.html" class="button">Super</a>
+        <a href="wavedash.html" class="button">Wavedash</a>
+        <a href="lösung.html" class="button">Clear-Video</a>
+      </div>
+
+    <script src="js/p5.min.js" defer></script>
+    <script src="js/p5.sound.min.js" defer></script>
+    <script src="js/player.js" defer></script>
+    <script src="js/point.js" defer></script>
+    <script src="js/solid.js" defer></script>
+    <script src="js/canvas/level.js" defer></script>
+
+    <script src="js/header.js"></script>
+</body>
+</html>

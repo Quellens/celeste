@@ -1,0 +1,275 @@
+body {
+  background-color: #e3ebff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Renogare';
+  font-weight: normal;
+  font-style: normal;
+  color: #242038;
+}
+
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+p {
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/* Container-Stile */
+.content {
+  max-width: 70%;
+  min-width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 0;
+  position: absolute;
+  top: 0;
+}
+
+/* Stile für die DIV´s */
+.info-group {
+  margin-bottom: 20px;
+}
+
+.info-group h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.info-group p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Mobile-Anpassungen */
+@media screen and (max-width: 600px) {
+  .content {
+    max-width: 90%;
+  }
+}
+
+
+.button, #change-setup-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'Renogare';
+  /*#dc493a*/
+  background-color: rgb(218, 92, 92);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+
+.gif-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.gif {
+  width: 200px;
+  height: auto;
+  transform: scale(1.0);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.gif-container:hover .gif {
+  transform: scale(1.2);
+}
+
+
+
+/* Styling für das Burger-Menü */
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle-label {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle-label span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 6px;
+}
+
+/* Styling für die Navigationsleiste */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media Query für das responsive Design */
+@media screen and (max-width: 768px) {
+  .menu-toggle-label {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle:checked~nav ul {
+    display: flex;
+  }
+}
+
+
+
+
+
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+
+
+
+
+/* Kartenlayout */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.info-card {
+  width: 100%;
+  height: auto;
+  perspective: 1000px;
+  position: relative;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transform: rotateY(360);
+}
+
+.card-front {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: rotateY(0);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.info-card:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.info-card:hover .card-back {
+  transform: rotateY(0);
+  z-index: 1;
+}
+
+.info-card {
+  height: 220px;
+  width: auto;
+  border: 3px solid rgb(186, 186, 186);
+  border-radius: 12px;
+}
+
+
+/* Stile für die DIV's */
+.info-group {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.info-group h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.info-group p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: rgb(71, 71, 185);
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
