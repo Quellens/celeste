@@ -45,9 +45,9 @@ let imgs;
 function preload() {
   imgs = [
 
-    loadImage('../../imgs/mydesign/madeline_sad.png'),
-    loadImage('../../imgs/mydesign/madeline_happy.png'),
-    loadImage('../../imgs/mydesign/madeline_SURPRISED.png')];
+    loadImage('https://raw.githubusercontent.com/Quellens/celeste/master/imgs/mydesign/madeline_sad.png'),
+    loadImage('https://raw.githubusercontent.com/Quellens/celeste/master/imgs/mydesign/madeline_happy.png'),
+    loadImage('https://raw.githubusercontent.com/Quellens/celeste/master/imgs/mydesign/madeline_SURPRISED.png')];
 }
 
 function setup() {
